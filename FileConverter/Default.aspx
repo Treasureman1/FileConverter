@@ -33,7 +33,12 @@
             *Read DataTable</li>
     </ol>
     <p>
+        Send Sample Email
+        <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" Text="Send Email" OnClick="Button1_Click" />
-        &nbsp;</p>
+        &nbsp;
+        <br />
+
+    </p>
 </asp:Content>
