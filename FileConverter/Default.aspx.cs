@@ -26,7 +26,7 @@ namespace FileConverter
         {
             MailMessage mail = new MailMessage();
 
-            SmtpClient SmtpServer = new SmtpClient("mail.rcrtechnology.com");////rcrtechnology
+            SmtpClient SmtpServer = new SmtpClient("mail.rcrtechnology.com");////rcrtechnology   //mail.rcrtechnology.com
 
             mail.From = new MailAddress("no-reply@nhbhas.com"); // this should be from   // thubbard@rcrtechnology.com
             mail.To.Add("thubbard@rcrtechnology.com");     // this should be to
@@ -35,9 +35,9 @@ namespace FileConverter
             mail.Body = "This is a sample string for the email body of the applicaton.";
 
 
-            SmtpServer.Port = 587;//587
+            SmtpServer.Port = 587; //587
             //SmtpServer.Credentials = new System.Net.NetworkCredential("jgrover@rcrtechnology.com", "********");
-            //SmtpServer.Credentials = new System.Net.NetworkCredential("thubbard@rcrtechnolog.com", "thubbard1");
+            //SmtpServer.Credentials = new System.Net.NetworkCredential("thubbard@rcrtechnology.com", "thubbard1");
             SmtpServer.EnableSsl = true;
 
             //below code (edited) Retreived from     http://stackoverflow.com/posts/5728177/edit
