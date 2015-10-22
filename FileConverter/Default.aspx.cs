@@ -25,6 +25,7 @@ namespace FileConverter
         public static void SendReportEmail()//string report, string agencyFolder, string from, string to , string cc, int importRunId, Aspect aspect
         {
             MailMessage mail = new MailMessage();
+            string s = "";
 
             SmtpClient SmtpServer = new SmtpClient("mail.rcrtechnology.com");////rcrtechnology   //mail.rcrtechnology.com
 
@@ -35,10 +36,9 @@ namespace FileConverter
             mail.Body = "This is a sample string for the email body of the applicaton.";
 
 
-            SmtpServer.Port = 25;//587; //587
+            SmtpServer.Port = 587;//587
             //SmtpServer.Credentials = new System.Net.NetworkCredential("jgrover@rcrtechnology.com", "********");
             //SmtpServer.Credentials = new System.Net.NetworkCredential("thubbard@rcrtechnology.com", "thubbard1");
-            //Try the Blat solution
             SmtpServer.EnableSsl = true;
 
             //below code (edited) Retreived from     http://stackoverflow.com/posts/5728177/edit
