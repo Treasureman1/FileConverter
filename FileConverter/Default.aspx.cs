@@ -35,7 +35,7 @@ namespace FileConverter
             mail.Body = "This is a sample string for the email body of the applicaton.";
 
 
-            SmtpServer.Port = 587; //587
+            SmtpServer.Port = 25;//587; //587
             //SmtpServer.Credentials = new System.Net.NetworkCredential("jgrover@rcrtechnology.com", "********");
             //SmtpServer.Credentials = new System.Net.NetworkCredential("thubbard@rcrtechnology.com", "thubbard1");
             //Try the Blat solution
