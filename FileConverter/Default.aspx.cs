@@ -38,6 +38,7 @@ namespace FileConverter
             SmtpServer.Port = 587; //587
             //SmtpServer.Credentials = new System.Net.NetworkCredential("jgrover@rcrtechnology.com", "********");
             //SmtpServer.Credentials = new System.Net.NetworkCredential("thubbard@rcrtechnology.com", "thubbard1");
+            //Try the Blat solution
             SmtpServer.EnableSsl = true;
 
             //below code (edited) Retreived from     http://stackoverflow.com/posts/5728177/edit
