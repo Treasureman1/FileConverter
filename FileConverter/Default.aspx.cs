@@ -25,7 +25,7 @@ namespace FileConverter
         public static void SendReportEmail()//string report, string agencyFolder, string from, string to , string cc, int importRunId, Aspect aspect
         {
             MailMessage mail = new MailMessage();
-            string s = "";
+            string s = "s";
 
             SmtpClient SmtpServer = new SmtpClient("mail.rcrtechnology.com");////rcrtechnology   //mail.rcrtechnology.com
 
